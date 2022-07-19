@@ -29,6 +29,9 @@ public class Contact extends BaseClass{
 			System.out.println(actualLastname);
 		        System.out.println(actualLastname);
 		        System.out.println(actualLastname);
+		         System.out.println(actualLastname);
+		        System.out.println(actualLastname);
+		        System.out.println(actualLastname);
 			if (actualOrganizationname.equals(expectedOrganizationName) && actualLastname.equals(expectedContactLastname)) {
 			javaUtility.printStatement("Contact is created with Organization is Validated");
 			excelUtility.setDataIntoExcel("Contacts", 2, 2, "Pass");
