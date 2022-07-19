@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="org.practice.TestNG.ContactswithWipro">
+        <methods>
+          <include name="deleteorganization"/>
+          <include name="classSetup"/>
+          <include name="classTearDown"/>
+          <include name="login"/>
+          <include name="methodTearDown"/>
+          <include name="creOrganization"/>
+        </methods>
+      </class> <!-- org.practice.TestNG.ContactswithWipro -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
