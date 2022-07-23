@@ -8,11 +8,49 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,804</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">158</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Testfirefox</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">43</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num attn">2</th><th class="num">0</th><th class="num">0</th><th class="num">201</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.practice.TestNG.CreateOrganizationWithIndustryAndTypeTest</td><td><a href="#m0">creOrganization</a></td><td rowspan="1">1658077513834</td><td rowspan="1">13807</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">org.practice.TestNG.CreateOrganizationWithIndustryAndTypeTest</td><td><a href="#m0">classTearDown</a></td><td rowspan="1">1658568433229</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m1">login</a></td><td rowspan="1">1658568433169</td><td rowspan="1">11</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">org.practice.TestNG.CreateOrganizationWithIndustryAndTypeTest</td><td><a href="#m2">creOrganization</a></td><td rowspan="1">1658568433204</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Testfirefox &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">org.practice.TestNG.Contact</td><td><a href="#m3">classTearDown</a></td><td rowspan="1">1658568433420</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m4">login</a></td><td rowspan="1">1658568433395</td><td rowspan="1">1</td></tr><tr><th colspan="4">Testfirefox &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">org.practice.TestNG.Contact</td><td><a href="#m5">deleteorganization</a></td><td rowspan="1">1658568433409</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">org.practice.TestNG.CreateOrganizationWithIndustryAndTypeTest#creOrganization</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Organization  with Industry and type creation is Validated<br/>Organization  with Industry and type creation is not Validated</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">org.practice.TestNG.CreateOrganizationWithIndustryAndTypeTest#classTearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.yantra.genericUtility.BaseClass.classTearDown(BaseClass.java:75)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.practice.TestNG.CreateOrganizationWithIndustryAndTypeTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.yantra.genericUtility.BaseClass.login(BaseClass.java:58)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.practice.TestNG.CreateOrganizationWithIndustryAndTypeTest#creOrganization</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.yantra.genericUtility.BaseClass.login(BaseClass.java:58)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Testfirefox</h2><h3 id="m3">org.practice.TestNG.Contact#classTearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.yantra.genericUtility.BaseClass.classTearDown(BaseClass.java:75)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.practice.TestNG.Contact#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.yantra.genericUtility.BaseClass.login(BaseClass.java:58)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">org.practice.TestNG.Contact#deleteorganization</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.yantra.genericUtility.BaseClass.login(BaseClass.java:58)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -13,7 +13,7 @@ import org.yantra.genericUtility.IpathConstants;
 //@Listeners(org.yantra.genericUtility.ListenersImp.class)
 public class CreateOrganizationWithIndustryAndTypeTest extends BaseClass {
 	
-	@Test
+	@Test(groups = {"REGRESSION"})
 	public  void creOrganization()
 	{
 				excelUtility.initializeExcelfile(IpathConstants.YANTRAEXCELPATH);

@@ -5,14 +5,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 public class BaseClass extends InstanceClass {
 	/**
 	 * This method used to open browser and Url
 	 */
-	
-	@BeforeClass(alwaysRun=true)
-	public void classSetup() {
+	@Parameters("browser")
+	@BeforeClass(alwaysRun = true)
+	public void classSetup(String browser) {
 		// Create object for Generic utility
 		excelUtility = new ExcelUtility();
 		javaUtility = new JavaUtility();
@@ -24,7 +25,7 @@ public class BaseClass extends InstanceClass {
 		fileUtility.initializePropertyFile(IpathConstants.YANTRAPROPERTYFILEPATH);
 
 		// Fetch data from Property file
-		browser = fileUtility.getDataFromPropertyFile("browser");
+		//browser = fileUtility.getDataFromPropertyFile("browser");
 		url = fileUtility.getDataFromPropertyFile("urlvt");
 		username = fileUtility.getDataFromPropertyFile("usernamevt");
 		password = fileUtility.getDataFromPropertyFile("passwordvt");

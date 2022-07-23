@@ -7,7 +7,7 @@ import org.yantra.genericUtility.BaseClass;
 import org.yantra.genericUtility.IpathConstants;
 public class Contact extends BaseClass{
 	
-	@Test
+	@Test(groups={"SMOKE","REGRESSION"})
 	    public void deleteorganization()
 	    {
 	    	excelUtility.initializeExcelfile(IpathConstants.YANTRAEXCELPATH);
@@ -27,9 +27,6 @@ public class Contact extends BaseClass{
 			String actualOrganizationname = actualOrganization.trim();
 			String actualLastname = driver.findElement(By.xpath("//span[@id='dtlview_Last Name']")).getText();
 			System.out.println(actualLastname);
-		        System.out.println(actualLastname);
-		        System.out.println(actualLastname);
-		         System.out.println(actualLastname);
 		        System.out.println(actualLastname);
 		        System.out.println(actualLastname);
 			if (actualOrganizationname.equals(expectedOrganizationName) && actualLastname.equals(expectedContactLastname)) {
